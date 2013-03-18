@@ -1,0 +1,575 @@
+<!DOCTYPE HTML>
+<html lang="es-ES" class="fade">
+<!-- 
+  ^ You can control a few things with the <html> element's classes:
+
+  "fade"      - smooth fade between slides
+  "nonumbers" - remove the slide numbering after the progress bar
+-->
+
+<head>
+  <title>PHP está mejorando</title>
+  <!-- 
+    ^ Don't forget a good title - they show up as bookmarks and in Google 
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1274, user-scalable=no">
+  <link rel="stylesheet" href="themes/customclear/styles/style.css">
+  <style type="text/css">
+    /* Add your own styles here */
+  </style>
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>PHP está mejorando</h1>
+    <p class="footer">Beto Arancibia, <a href="http://twitter.com/betoscopio">@betoscopio</a></p>
+  </header>
+
+<!-- 
+  The following is a slide, it needs a class of "slide" and it doesn't 
+  hurt to keep the right semantic elements in there, too.
+  IMPORTANT: each slide needs its own unique ID - this will become its
+  URL and this is how this slide system works!
+-->
+
+  <div id="cover" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>PHP está mejorando</h2>
+      </header>
+      <img src="pictures/betterphp/php_elephants.jpg" alt="PHP Elephants">
+      <p style="color: #ddd; background:rgba(0,0,0,0.5); margin-top:16em">... y cómo Drupal está ayudando a ello.</p>
+      <small class="byline">
+        Beto Arancibia, Drupal Summit Latino, Loja, Ecuador, 14/03/2013
+      </small>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="me" class="slide"><div>
+    <section>
+      <header>
+        <h2>Beto Arancibia</h2>
+      </header>
+      <ul>
+        <li>Drupalero desde 2010</li>
+        <li>Desarrollador web desde 2005</li>
+        <li>Seguidor de los estándares web desde hace unos 10 años.
+      </ul>
+      
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="php" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>PHP ...?</h2>
+      </header>
+      <img src="pictures/betterphp/sceptic_hipster.jpg" alt="sceptic face">
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="php1" class="slide cover w"><div>
+    <section>
+
+      <img src="pictures/betterphp/php-hammer.jpg" alt="weird tool">
+       <small class="credits">
+        <a href="http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/">
+          PHP: a fractal of bad design
+        </a>&nbsp;  
+        <a href="http://www.codinghorror.com/blog/2012/06/the-php-singularity.html">
+          The PHP Singularity
+        </a>
+      </small> 
+    <footer class="notes">
+      En el último año hubo muchas crítcas a PHP, algunas de las más recordadas son http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/ o http://www.codinghorror.com/blog/2012/06/the-php-singularity.html y algunas intersantes respuestas http://blog.ircmaxell.com/2012/04/php-sucks-but-i-like-it.html.
+      Muchas de ellas tienen razón, otras algo desinformadas, otras a problemas ya solucionados, pero lo interesante aquí es que se presentan importantes desafios a PHP como lenguaje y su comunidad.
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="php2" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Por qué precouparme?</h2>
+      </header>
+      <img src="pictures/betterphp/bored_face.jpg" alt="Bored face">
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/jope1978/3969662362/in/photostream/">
+          Bored
+        </a>
+      </small> 
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+ <div id="phpusage" class="slide"><div>
+    <section>
+      <header>
+        <h2>Uso de PHP</h2>
+      </header>
+      <p>PHP es usado por casi el 80% de los sitios con lenguages de lado de servidor.</p>
+      <img src="pictures/betterphp/phpusage.png" alt="PHP Usage">
+      <small class="credits">
+        <a href="http://w3techs.com/technologies/details/pl-php/all/all">
+          Uso de PHP
+        </a>
+      </small> 
+          <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+   <div id="phpmarket" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sin embargo...</h2>
+      </header>
+      <figure class="middle">
+        <img src="pictures/betterphp/programming_languages.png" height="450" alt="Programming Languages Market Share">
+      </figure>
+      <small class="credits">
+        <a href="http://w3techs.com/technologies/details/pl-php/all/all">
+          Uso de PHP
+        </a>
+      </small>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="langconclusions" class="slide"><div>
+    <section>
+      <header>
+        <h2>Algunas conclusiones de esto</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">PHP sigue siendo el lenguaje de servidor más usado</li>
+        <li>... y su uso sigue aumentando.</li>
+        <li>PHP es usado en muchos sitios más con poco tráfico que otros lenguajes de servidor.</li>
+        <li>... alguien debe mantener/mejorar este código</li>
+        <li>El uso de ASP.NET está decreciendo.</li>
+        <li>Perl, Python, Javascript, Ruby y ColdFusion son usados en "pocos" sitios, pero de alto tráfico.</li>
+        <li>El uso de CMSs está aumentando.</li>        
+      </ul>
+      <small class="credits">
+        <a href="http://blog.websitesframeworks.com/2013/03/programming-language-statistics-in-server-side-161">
+          Server-side programming language statistics of usage
+        </a>
+      </small>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="criticas" class="slide"><div>
+    <section>
+      <header>
+        <h2>Críticas y horrores</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">Lenguaje no diseñado, de crecimento inorgánico.</li>
+        <li>Muchas formas de hacer lo mismo sin estar seguro de cual es la correcta.</li>
+        <li>Soporte de carácteres internacionales.</li>
+        <li>Variables globales</li>
+        <li>Falta de <em>Namespaces</em>(?)</li>
+        <li>Duplicidad de trabajo para dar soporte para código legacy</li>
+        
+      </ul>
+      <small class="credits">
+        <a href="https://www.quora.com/PHP/What-are-the-horrors-of-PHP">
+          Cuáles son los horrores de PHP?
+        </a>
+      </small>
+      <footer class="notes">
+        Más sobre criticas y posobles problemas de PHP
+        https://www.quora.com/PHP/What-factors-during-the-development-of-PHP-contributed-to-it-being-such-a-poorly-designed-language
+https://www.quora.com/Do-a-large-majority-of-people-hate-PHP-solely-because-other-people-do-so
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="problemphp" class="slide"><div>
+    <section>
+      <header>
+        <h2>Problemas y consecuencias</h2>
+      </header>
+      <ul class="inner longlist">
+        <li></li>
+        <li class="active">demasiadas "soluciones", CMSs y Frameworks</li>
+        <li>documentación de calidad?</li>
+        <li>Falta de closures y funciones anónimas(?)</li>
+        <li>Falta de estándares y convenciones</li>
+        <li>Conflictos de nombres... namespaces</li>
+        <li>No hay (?) una forma estándar de instalar nuevos módulos... PEAR?</li>
+        <li>Sus desarrolladores</li>
+        <li>Duplicidad de código</li>
+        <li>doble de código</li>
+        <li>código duplicado ...</li>
+        <li>Torre de Babel de "módulos"</li>
+        <li>Poca gente interesada en desarrollar y mejorar el lenguaje</li>
+      </ul> 
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="nuevo" class="slide"><div>
+    <section>
+      <header>
+        <h2>Nuevas características</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">Funciones deprecadas</li>
+        <li><strong>Namespaces</strong> (PHP 5.3)</li>
+        <li>Servidor web incorporado (PHP 5.4)</li>
+        <li>Funciones anónimas</li>
+        
+      </ul> 
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+
+  <div id="diferent" class="slide"><div>
+    <section>
+      <header>
+        <h2>y quien usa las "últimas" versiones?</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">Shared hosts?</li>
+        <li>VPSs</li>
+        <li>Cloud Computing</li>
+        <li>AWS, Open Stack</li>
+      </ul> 
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="adoption" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Adopción mucho más rápida</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="bettertools" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Mejores herramientas de desarrollo</h2>
+      </header>
+      <img src="pictures/betterphp/toolset.jpg" alt="A better toolset">
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="composer" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <img src="pictures/betterphp/logo-composer.png" alt="Composer logo" class="middle">
+      <small class="credits">
+        <a href="http://getcomposer.org">
+          Composer
+        </a>
+      </small>           
+      <footer class="notes">
+        <p>Composer gets you the libraries you want at the versions you need. And if those libraries use other libraries, it can install those and manage them as well.</p>
+        Inspirado en Bundler (Ruby) y npm (Node JS).
+        Intro: http://getcomposer.org/doc/00-intro.md
+        Basic usage: http://getcomposer.org/doc/01-basic-usage.md
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="composer2" class="slide"><div>
+    <section>
+      <header>
+        <h2>Dependency Manager</h2>
+      </header>
+      <blockquote>
+        <p>
+          Composer is not a package manager. Yes, it deals with "packages" or libraries, but it manages them on a per-project basis, installing them in a directory (e.g. vendor) inside your project.
+        </p>
+        <p class="quotesource">Composer website</p>      
+      </blockquote>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="composer3" class="slide"><div>
+    <section>
+      <header>
+        <h2>Usando Composer</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">Instalar Composer</li>
+        <li>Definir archivo <code>composer.json</code>
+        <li><code>$ composer install</code></li>
+      </ul>
+      <small class="credits">
+        <a href="http://getcomposer.org/download">
+          Instalación Composer
+        </a>
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="modular" class="slide"><div>
+    <section>
+      <header>
+        <h2>Modularidad</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">The Drupal way</li>
+        <li>The Unix way</li>        
+      </ul> 
+
+      <p>Encargate de hacer solo una tarea, ... pero hazla bien.</p>
+      <footer class="notes">
+
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="doitwell" class="slide shout"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <blockquote>
+        <p>This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.</p>
+      </blockquote>
+      <p class="quotesource">Doug McIlroy</p>
+      <small class="credits">
+        <a href="http://en.wikipedia.org/wiki/Unix_philosophy">
+          The Unix Philosophy
+        </a>
+      </small>
+      <footer class="notes">
+        
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="packagist" class="slide"><div>
+    <section>
+      <header>
+        <h2>Packagist</h2>
+      </header>
+      <img src="pictures/betterphp/packagist-logo.png" alt="Packagist logo" class="middle">
+      <small class="credits">
+        <a href="https://packagist.org">
+          Packagist
+        </a>
+      </small>           
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="standares" class="slide"><div>
+    <section>
+      <header>
+        <h2>Necesitamos Estándares</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">Necesidad de comunicarnos</li>
+        <li>Necesario para la compatibilidad</li>
+        <li>Se está trabajando en ello desde el 2009</li>
+        <li>Distintos niveles de compatibilidad</li>        
+      </ul>
+      <small class="credits">
+        <a href="http://www.php-fig.org/">
+          PHP Framework Interop Group
+        </a>
+
+        <a href="http://net.tutsplus.com/tutorials/php/psr-huh/">
+          PSR Huh?
+        </a>        
+      </small>  
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="modularreflection" class="slide"><div>
+    <section>
+      <header>
+        <h2>Oh wait...</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">PHP ya ha definido estándares</a>
+        <li>PHP puede ser modular</li>
+        <li>PHP por fin está reutilizando su código</li>
+        <li>Existen estándares</a>
+        <li>Importantes proyectos ya comparten su código</a>
+        <li>Por favor, dejemos de reeinventar la rueda</li>
+        <li>... ya no es necesario hacerlo</li>        
+      </ul>        
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="symfony" class="slide"><div>
+    <section>
+      <header>
+        <h2>Symfony</h2>
+      </header>
+      <img src="pictures/betterphp/symfony-logo.png" alt="Symfony logo" class="middle">
+      <small class="credits">
+        <a href="http://symfony.com/">
+          Symfony
+        </a>
+      </small>           
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div> 
+
+  <div id="drufony" class="slide cover"><div>
+    <section>
+      <header>
+        <h2>Synfony2 meets Drupal</h2>
+      </header>
+      <img src="pictures/betterphp/drufony.png" alt="Drufony">
+      <small class="credits">
+        <a href="http://garfieldtech.com/presentations/sfl2012-drupal8/index.html">
+          Larry Garfield
+        </a>
+      </small> 
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div> 
+
+  <div id="symfonydrupal" class="slide"><div>
+    <section>
+      <header>
+        <h2>Symfony 2 + Drupal</h2>
+      </header>
+      <ul>
+        <li>Symfony 2 tiene 21 componentes reutilizables</a>
+        <li>Drupal 8 usa 11 de estos componentes</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="symfonydrupal2" class="slide"><div>
+    <section>
+      <header>
+        <h2>Symfony 2 + Drupal</h2>
+      </header>
+      <p>¿Para qué?</p>
+      <ul>
+        <li>Class loading utilities (PSR-0)</li>
+        <li>Dependency injection (manejo de construccion de objetos)</li>
+        <li>HTTP Foundation y HTTP Kernel</li>
+        <li>Routing (match/request)</li>
+        <li>YAML (nuevos cambios en configuración, CMI)</li>
+        <li>Varias utilidades</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+    <div id="drupalphp" class="slide"><div>
+    <section>
+      <header>
+        <h2>No sólo Symfony</h2>
+      </header>
+      <ul>
+        <li>Doctrine</li>
+        <li>Guzzle(Common, HTTP, Parser, Stream</li>
+        <li>EasyRdf</li>
+        <li>Routing (match/request)</li>
+        <li>Symfony-CMF/Routing </li>
+        <li>Assetic</li>
+        <li>PHP Unit</li>
+        <li>Twig</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="wheretolearn" class="slide"><div>
+    <section>
+      <header>
+        <h2>Donde aprender...</h2>
+      </header>
+      <ul>
+        <li><a href="http://www.garfieldtech.com/">Lee a Larry Garfield</a></li>
+        <li><a href="http://www.phptherightway.com/">PHP: The Right Way</a></li>
+        <li><a href="http://phpmaster.com/">PHP Master</a></li>
+        <li><a href="http://www.sitepoint.com/books/phppro1/">PHP Master: Write Cutting-Edge Code (el libro)</a></li>
+        <li><a href="http://www.planet-php.net/">Planet PHP</a></li>
+        <li><a href="http://www.phpconference.com.ar">PHP Conference Argentina</a> (4-5 de Octubre)</li>
+      </ul> 
+      <footer class="notes">
+        Getting off the island, http://www.garfieldtech.com/blog/off-the-island-2013
+        From Amateur to Pro with PHP the Right Way: http://smarterware.org/10200/from-amateur-to-pro-with-php-the-right-way
+      </footer>
+    </section>
+  </div></div>
+
+ <div id="creditos" class="slide"><div>
+    <section>
+      <header>
+        <h2>Créditos</h2>
+      </header>
+      <ul>
+        <li><a href="http://pepelsbey.net/">Vadim Makeev</a> (<a href="http://shwr.me/">Shower project</a>)</li>
+        <li><a href="http://christianheilmann.com/">Christian Heilmann</a> (<a href="https://github.com/codepo8/shower">Shower Fork</a>)</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="preguntas" class="slide"><div>
+    <section>
+      <header>
+        <h2>Preguntas?</h2>
+      </header>
+      <ul class="oneline demourl">
+        <li>Beto Arancibia</li>
+        <li><a href="http://twitter.com/betoscopio">@betoscopio</a></li>
+        <li><a href="http://betoscopio.druplagardens.com">
+          Blog
+        </a></li>
+      </ul>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div class="progress"><div></div></div>
+  <!-- 
+    ^ don't like a progress bar? just delete this DIV
+  -->
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
